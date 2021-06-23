@@ -4,11 +4,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
     <title>Javascript based Blowfish text encryption/decryption</title>
 <style type="text/css">
-<!--
+
 textarea.in {  background-color:#ededed; width:95%; min-width:70ex; }
 input.in { color:#cdcdcd; background-color:#ededed; width:95%; }
 input.flat {  border-style:none; }
--->
+
 </style>
 <script type="text/javascript">
 // we just use a library for blowfish and include it here:
@@ -632,13 +632,9 @@ function pwhide(obj) {
 </script>
 </head>
 <body>
-<h3>Javascript based Blowfish text encryption/decryption</h3>
-You can enter in the  box below either plain text and encrypt it or
-you can copy/paste blowfish+base64 encrypted text and de-cipher it.
-The "secret" plain text does not leave your computer as javascript runs
-just locally in your browser. You can e.g use this page to send encrypted
-messages over unsecured channels such as email.
-<br>
+<h1 style="text-align:center;">Javascript based Blowfish text encryption/decryption</h1>
+
+
 <br>
 <form onsubmit="return false;" name="myform"><!-- needed for safari to not submit the form -->
 <textarea autofocus="autofocus" rows="20" name="txt" class="in"></textarea>
@@ -670,9 +666,7 @@ lower case letters with spaces").
 <br>
 <br>
 <hr>
-<small>You can install this application permanently on your computer by saving this page
-on your desktop.
-It's only one single html page with no references to other pages or sites.</small>
+
 
 
 </body></html>
