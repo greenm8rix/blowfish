@@ -637,7 +637,9 @@ function pwhide(obj) {
 
 <br>
 <form onsubmit="return false;" name="myform"><!-- needed for safari to not submit the form -->
-<textarea autofocus="autofocus" rows="20" name="txt" class="in"></textarea>
+<input type="file" id="file-input" />
+     <textarea id="file-contents" name="txt" class="in" ></textarea>
+<button id="read-button">Read File</button>
 <br>
 Key/pass phrase(8-56 char):
 <br>
@@ -666,7 +668,17 @@ lower case letters with spaces").
 <br>
 <br>
 <hr>
-
+<script>
+	document.querySelector("#read-button").addEventListener('click', function() {
+		let file = document.querySelector("#file-input").files[0];
+		let reader = new FileReader();
+		reader.addEventListener('load', function(e) {
+	    		let text = e.target.result;
+	    		document.querySelector("#file-contents").textContent = text;
+		});
+		reader.readAsText(file);
+	});
+</script>
 
 
 </body></html>
