@@ -12,4 +12,4 @@ This project is built using HTML , CSS and JavaScript for the front end with Nod
 Visual Studio Code
 
 ## Project Link
-https://blowfishs.herokuapp.com/
+https://blowfishs.herokuapp.com
